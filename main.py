@@ -1,4 +1,3 @@
-'''
 print('Enter \"Rock\", \"Paper\", or \"Scissors\".')
 
 player_1_input = input('Player one: type your move:\n').lower()
@@ -36,14 +35,21 @@ else:
 print('Would you like to play again?')
 
 
-'''
 
 # --------------------------------------------------------
+# Attempt #2
 
-print('Enter \"Rock\", \"Paper\", or \"Scissors\".')
 
-player_1_input = input('Player one: type your move:\n').lower()
-player_2_input = input('Player two: type your move:\n').lower()
+
+
+# print('Enter \"Rock\", \"Paper\", or \"Scissors\".')
+
+# player_1_input = input('Player one: type your move:\n').lower()
+# player_2_input = input('Player two: type your move:\n').lower()
+
+
+
+
 
 # Notes for later:
 # Create a section that tests player_1_input against player_2_input
