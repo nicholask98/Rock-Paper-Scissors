@@ -1,63 +1,28 @@
+comparisons = {
+    'rock': 'scissors',
+    'scissors': 'paper',
+    'paper': 'rock'
+}
+
 print('Enter \"Rock\", \"Paper\", or \"Scissors\".')
+restart = 'y'
 
-player_1_input = input('Player one: type your move:\n').lower()
-player_2_input = input('Player two: type your move:\n').lower()
-
-while player_1_input == player_2_input:
-    print('Tie! Input next moves:')
+while restart == 'y':
     player_1_input = input('Player one: type your move:\n').lower()
     player_2_input = input('Player two: type your move:\n').lower()
 
-if player_1_input == 'rock':
-    if player_2_input == 'scissors':
-        print('Rock beats scissors, congrats Player One!')
-    elif player_2_input == 'paper':
-        print('Paper beats rock, congrats Player Two!')
-    else: 
-        print('Something went wrong. Play again PLEASE')
-elif player_1_input == 'scissors':
-    if player_2_input == 'paper':
-        print('Scissors beats paper, congrats Player One!')
-    elif player_2_input == 'rock':
-        print('Rock beats scissors, congrats Player Two!')
-    else: 
-        print('Something went wrong. Play again PLEASE')
-elif player_1_input == 'paper':
-    if player_2_input == 'rock':
-        print('Paper beats rock, congrats Player One!')
-    elif player_2_input == 'scissors':
-        print('Scissors beats paper, congrats Player Two!')
-    else: 
-        print('Something went wrong. Play again PLEASE')
-else:
-    print('Something went wrong. Play again PLEASE')
+    while player_1_input == player_2_input:
+        print('Tie! Input next moves:')
+        player_1_input = input('Player one: type your move:\n').lower()
+        player_2_input = input('Player two: type your move:\n').lower()
+        
+    if player_1_input and player_2_input in comparisons:
+        if player_2_input == comparisons[player_1_input]:
+            print('{} beats {}, player 1 wins!'.format(player_1_input, player_2_input))
+        elif player_1_input == comparisons[player_2_input]:
+            print('{} beats {}, player 2 wins!'.format(player_2_input, player_1_input))
+    else:
+        print("Invalid selection.")
+    restart = input('Type "y" to play again.\n')
 
-print('Would you like to play again?')
-
-
-
-# --------------------------------------------------------
-# Attempt #2
-
-
-
-
-# print('Enter \"Rock\", \"Paper\", or \"Scissors\".')
-
-# player_1_input = input('Player one: type your move:\n').lower()
-# player_2_input = input('Player two: type your move:\n').lower()
-
-
-
-
-
-# Notes for later:
-# Create a section that tests player_1_input against player_2_input
-# Ideas:
-#  - Maybe assign temporary variables with the values inputted 
-#    by the users and then return a number 1, or 0 for the winner
-#  - Need a function that compares Rock Paper and Scissors outside
-#    of their relation to the users. Pass in the variables of the 
-#    user input and output the winner. I know we haven't learned
-#    functions yet, but maybe there's a way to accomplish that same
-#    goal without functions........ FIGURE IT OUT
+print("Thanks for playing!")
