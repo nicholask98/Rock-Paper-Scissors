@@ -8,3 +8,6 @@ Make a two-player Rock-Paper-Scissors game. (Hint: Ask for player plays (using i
 * Rock beats scissors
 * Scissors beats paper
 * Paper beats rock
+
+### Completion update
+I used a dictionary to reference comparisons and a while loop with a sentinel value input from the user to restart the game. Now it can be played on loop. Invalid selections are detected by the user inputs not existing in the comparisons dictionary.
