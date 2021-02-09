@@ -11,3 +11,6 @@ Make a two-player Rock-Paper-Scissors game. (Hint: Ask for player plays (using i
 
 ### Completion update
 I used a dictionary to reference comparisons and a while loop with a sentinel value input from the user to restart the game. Now it can be played on loop. Invalid selections are detected by the user inputs not existing in the comparisons dictionary.
+
+### Single Player Update
+I created a bot using the random module to play against the user. Game functions in the same way as it does in multiplayer mode, but with random cpu moves instead of player 2 moves.
