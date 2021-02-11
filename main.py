@@ -58,7 +58,8 @@ elif multiplayer == False:
 
         cpu_input = random.choice(options)
 
-# Same code as above but with cpu titles, and slight other strings altered. Find a way to reuse this code instead of copying it
+# Same code as above but with cpu titles, and slight other strings altered. 
+# Find a way to reuse this code instead of copying it
 
 # ------------------------------------------------------
         while player_1_input == cpu_input:
